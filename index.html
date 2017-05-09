@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+  <head>
+    <meta charset="utf-8">
+    <script src="angular.min.js" charset="utf-8"></script>
+    <script src="client.js" charset="utf-8"></script>
+    <title>Anuglar intro</title>
+  </head>
+  <body>
+    <h1>Anuglar intro</h1>
+    <div class="oneWayBinding">
+      <div ng-controller="controllerOne as first">
+        {{first.thingOne}}
+        <div>
+          {{first.thingTwo}}
+        </div>
+        <input ng-model="first.name" type="text">
+        <h1>
+          {{first.name}}
+        </h1>
+      </div>
+    </div> <!-- end of oneWayBinding -->
+    <div class="twoWayBinding">
+    </div>
+  </body>
+</html>
